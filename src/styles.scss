@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+body { margin: 0;
+    /* background-color: $second-color-white; */
+    background-color: #f9fbfe;
+}
+* {
+  font-family:'poppin';
+  color: #1d1d1d;
+}
+@font-face {
+    font-family: 'poppin';
+    src: url('assets/fonts/Poppins-Regular.ttf');
+}
+@font-face {
+    font-family: 'poppin-bold';
+    src: url('assets/fonts/Poppins-Bold.ttf');
+}

@@ -1,0 +1,17 @@
+/* credits
+Photo by <a href="https://unsplash.com/@dinoreichmuth?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Dino Reichmuth</a> on <a href="https://unsplash.com/photos/green-leafed-tree-near-body-of-water-quFGlyxQufE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  
+*/
+.img-background-load{
+    position: absolute;
+    min-height: 100vh;
+    gap: 15rem;
+    display: flex;
+    flex-direction: column;
+    img{
+        z-index: -10;
+        object-fit: cover;
+        object-position: top;
+        top: 15rem !important;
+    }
+}

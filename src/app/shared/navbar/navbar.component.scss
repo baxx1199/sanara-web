@@ -1,0 +1,35 @@
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 4rem;
+    .logo,.nav-options-container{
+        width: 45%;
+        margin: 0 1rem;
+        display: flex;
+        flex: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        span{
+            width: 100%;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    }
+    .nav-options-container{
+        justify-content: flex-end !important;
+        gap: 2rem;
+        padding-right: 2rem;
+        a{
+            text-decoration: none;
+            color: #010303;
+            width: fit-content;
+            border-bottom: 2px solid #F28C8C;
+            text-align: center;
+        }
+    }
+}
