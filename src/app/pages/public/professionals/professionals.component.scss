@@ -1,0 +1,57 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .professional-container {
+    width: 70%;
+    margin: auto;
+    .professionals-header {
+      h2 {
+        font-family: "poppin-bold";
+        font-size: 5rem;
+        line-height: 90px;
+        color: #47c48c;
+        margin-bottom: 2rem;
+      }
+    }
+    .professionals-body {
+      .professional-card {
+        .card-header {
+          h2 {
+            font-family: "poppin-bold";
+            font-size: 3rem;
+            line-height: 90px;
+            color: #a28cde;
+            margin-bottom: 2rem;
+          }
+          .title-julian {
+            text-align: end;
+          }
+        }
+        .card-body {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          .card-left {
+            width: 55%;
+            p,
+            h3,
+            .skills {
+              font-size: 1.5rem;
+            }
+            p{
+              text-align: justify;
+            }
+          }
+          .card-right {
+            width: 40%;
+            img {
+            }
+          }
+        }
+      }
+    }
+  }
+}
