@@ -10,16 +10,31 @@ footer {
     .left{
         width: 40%;
         text-align: start;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         h2{
             font-size: 4rem;
             font-weight: bold;
             margin: 0;
+            color: #A28CDE;
         }
         p{
             font-size: 1.3rem;
             margin-top: -30px;
         }
 
+        .social-networks-icons{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+            .icon{
+                img{
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
     }
     .right{
         width: 40%;
@@ -31,14 +46,25 @@ footer {
             width: 150px;
             height: 150px;
         }
-        button{
-            height: 50px;
+        a{
+            height: 70px;
             padding: 0rem 4rem;
             margin-top: 2rem;
             color: #f4f4f4;
             background-color: #47C48C;
             border: none;
             border-radius: 5px;
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 50px;
+            height: 50px;
+            color: #f4f4f4;
+            margin-left: 2rem;
+            }
         }
     }
   }

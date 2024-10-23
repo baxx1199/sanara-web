@@ -1,0 +1,29 @@
+.container-talleres {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  .talleres-card {
+    .card-header {
+      h2 {
+        font-family: "poppin-bold";
+        font-size: 3rem;
+        line-height: 90px;
+        margin-bottom: 2rem;
+        color: #47c48c;
+      }
+    }
+    .card-body {
+      p {
+        font-size: 1.5rem;
+      }
+    }
+    .card-footer {
+      button {
+        border: none;
+        padding: 1rem 3rem;
+        border-radius: 5px;
+        background-color: #a28cde;
+        font-family: "poppin-bold";
+      }
+    }
+  }
+}

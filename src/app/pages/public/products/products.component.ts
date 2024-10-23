@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+import { TalleresComponent } from '../talleres/talleres.component';
+import { ServicesComponent } from '../services/services.component';
 
 @Component({
   selector: 'app-products',
   standalone: true,
-  imports: [],
+  imports: [TalleresComponent, ServicesComponent],
   templateUrl: './products.component.html',
   styleUrl: './products.component.scss'
 })
