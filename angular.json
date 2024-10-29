@@ -92,8 +92,13 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
-        }
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "repo": "https://github.com/baxx1199/sanara-web.git",
+            "branch": "gh-pages",
+            "dir": "dist/sanara-web/browser"          
+          }
+         }
       }
     }
   }
