@@ -1,0 +1,74 @@
+.container-modal{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #474444e8;
+    justify-content: center;
+    align-items: center;
+    .modal{
+        background-color: #f4f4f4;
+        width: 60%;
+        padding: 2rem 4rem;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        border-radius: 5px;
+        height: 90vh;
+        justify-content: space-between;
+        .modal-header{
+            .details-labels{
+                display: flex;
+                flex-direction: column;
+                .row-details{
+                    .icon{}
+                    .text-detail{
+
+                    }
+                }
+            }
+            .row{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                h2{
+                    font-size: 4rem;
+                    font-family: 'poppin-bold';
+                    color: #a28cde;
+                    margin: 0;
+                }
+                button{
+                    background-color: transparent;
+                    border: none;
+                    height: fit-content;
+                    width: fit-content;
+                    position: absolute;
+                    font-size: 2rem;
+                    right: 50px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .modal-body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 3rem;
+            p{
+                text-align: justify;
+            }
+        }
+        .btn-agendar{
+            font-family: "poppin-bold";
+            width: 70%;
+            text-align: center;
+            padding: 1.3rem;
+            text-decoration: none;
+            background-color: #a28cde;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin: auto;
+            margin-bottom: 60px;
+        }
+    }
+}

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DetailService } from '../../../shared/services/detail.service';
 
 @Component({
   selector: 'app-featured',
@@ -8,5 +9,8 @@ import { Component } from '@angular/core';
   styleUrl: './featured.component.scss'
 })
 export class FeaturedComponent {
-
+  constructor(private modalService:DetailService) { }
+  openModal(){
+    this.modalService.setDataModal(true)
+  }
 }

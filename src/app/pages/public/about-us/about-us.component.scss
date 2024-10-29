@@ -41,10 +41,13 @@
         }
         .about-us-right{
             width: 50%;
+            p{
+                font-size: 1.2rem;
+            }
             .card{
                 box-sizing: border-box;
                 padding: 3rem 2.5rem;
-                background-color: rgba(244, 244, 244, 0.15) !important;
+                background-color: rgba(244, 244, 244, 0.392) !important;
                 border-radius: 5px;
                 .card-header{
                     width: 100%;

@@ -16,3 +16,8 @@ Photo by <a href="https://unsplash.com/@dinoreichmuth?utm_content=creditCopyText
         top: 15rem !important;
     }
 }
+.modal{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+}

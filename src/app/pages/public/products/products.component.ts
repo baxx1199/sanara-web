@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TalleresComponent } from '../talleres/talleres.component';
-import { ServicesComponent } from '../services/services.component';
+import { ServicesComponent } from '../servicesComp/services.component';
 
 @Component({
   selector: 'app-products',
