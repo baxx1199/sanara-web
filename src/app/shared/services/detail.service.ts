@@ -1,26 +1,35 @@
 import { EventEmitter, Injectable } from '@angular/core';
 
-
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class DetailService {
   $isOpen = new EventEmitter<any>();
-  isOpen:any =false;
+  isOpen: any = false;
 
-constructor() { }
+  $data = new EventEmitter<any>();
+  data: any = '';
 
-setDataModal(statusModal: any): void {
-  this.isOpen = statusModal;
-  this.$isOpen.emit(statusModal);   
-}
+  constructor() {}
 
-/**
- * Retrieves the data for the modal dialog.
- * @returns The data for the modal dialog
- */
-getDataModal(): Boolean {
-  return this.isOpen;
-}
+  setDataModal(statusModal: any): void {
+    this.isOpen = statusModal;
+    this.$isOpen.emit(statusModal);
+  }
 
+  /**
+   * Retrieves the data for the modal dialog.
+   * @returns The data for the modal dialog
+   */
+  getDataModal(): Boolean {
+    return this.isOpen;
+  }
+
+  setInfoData(data: any): void {
+    this.data = data;
+    this.$data.emit(data);
+  }
+  getInfoData(): any {
+    return this.data;
+  }
 }

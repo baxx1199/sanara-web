@@ -2,38 +2,32 @@
     <div class="modal">
         <div class="modal-header">
             <div class="row">
-                <!-- <h2>{{productInfo.title}}</h2> -->
-                <h2>titulo de consulta</h2>
-                <button (click)="closeModal()">X</button>
+                <h2>{{productInfo.nombre}}</h2> 
+                 <button (click)="closeModal()">X</button>
             </div>
             <div class="row">
                 <div class="details-labels">
 
 
                     <div class="row-details">
-                        <div class="icon"></div>
-                        <!-- <div class="text-detail">{{productInfo.professional}}</div> -->
-                        <div class="text-detail">anzary cobos</div>
+                        <mat-icon aria-hidden="false" class="material-icons icon" aria-label="Icon of person" fontIcon="person"></mat-icon>
+                        <div class="text-detail">{{productInfo.nombreProfesional}}</div>
                     </div>
                     <div class="row-details">
-                        <div class="icon"></div>
-                        <!-- <div class="text-detail">{{productInfo.duration}} min</div> -->
-                        <div class="text-detail">20</div>
+                        <mat-icon aria-hidden="false" class="material-icons icon" aria-label="Icon of timer" fontIcon="timer"></mat-icon>
+                        <div class="text-detail">{{productInfo.duracion}}</div> 
                     </div>
                     <div class="row-details">
-                        <div class="icon"></div>
-                        <!-- <div class="text-detail">{{productInfo.type}}</div> -->
-                        <div class="text-detail">presencial</div>
+                        <mat-icon aria-hidden="false" class="material-icons icon" aria-label="Icon of apartment" fontIcon="apartment"></mat-icon> 
+                        <div class="text-detail">{{productInfo.tipoConsulta}}</div>
                     </div>
 
                 </div>
             </div>
         </div>
         <div class="modal-body">
-            <!-- <p>{{productInfo.description}}</p> -->
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione consequatur deleniti amet recusandae
-                repellat! Porro iste dicta ipsum sapiente veniam eos recusandae dolorem, ea, possimus nulla et amet
-                consectetur quaerat.</p>
+           <p>{{productInfo.descripcionDetallada}}</p> 
+            
             </div>
             <a class="btn-agendar" href="">Agendar</a>
     </div>

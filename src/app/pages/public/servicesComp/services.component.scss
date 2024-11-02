@@ -1,47 +1,4 @@
-/* .container-servicies {
-  width: 100%;
-  h2 {
-    font-family: "poppin-bold";
-    font-size: 3rem;
-    line-height: 90px;
-    margin-bottom: 2rem;
-    color: #a28cde;
-  }
-  .services-card {
-    .card-header {
-      h2 {
-        font-family: "poppin-bold";
-        font-size: 3rem;
-        line-height: 90px;
-        margin-bottom: 2rem;
-        color: #010303;
-      }
-    }
-    .card-body {
-      p {
-        font-size: 1.5rem;
-      }
-    }
-    .card-footer {
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-      button {
-        border: none;
-        padding: 1rem 3rem;
-        border-radius: 5px;
-        background-color: #a28cde;
-        font-family: "poppin-bold";
-      }
-      .btn-info{
-        border: 2px solid #47c48c;
-        background-color: #f4f4f4;
-        color:#47c48c;
-      }
 
-    }
-  }
-} */
 .container-servicies {
   width: 100%;
 
@@ -55,6 +12,7 @@
       box-sizing: border-box;
       padding: 2rem 1rem;
       display: flex;
+      min-height: 400px;
       flex-direction: column;
       background-color: #fff;
       box-shadow: 0px 0px 10px #c5c5c58a;
@@ -62,16 +20,17 @@
         h2 {
               font-size: 1.4rem;
                 margin: 0;
-                height: 50px;
-                line-height: 50px;
+                min-height: 50px;
+                line-height: 20px;
                 color: #010303;
                 text-align: center;
+                margin-bottom: 1rem;
         }
       } 
       .card-body {
         p {
           font-size: 1.1rem;
-          text-align: justify;
+          text-align: center;
         }
       } 
      .card-footer {

@@ -2,22 +2,23 @@
     <h2>Consultas y servicios</h2>
     <div class="container-cards">
 
+        @for (item of servicesList; track $index) {
 
-        <div class="services-card">
-            <div class="card-header">
-                <h2>Consultas trabajo social</h2>
+            <div class="services-card">
+                <div class="card-header">
+                    <h2>{{item.nombre}}</h2>
+                </div>
+                <div class="card-body">
+                    <p>{{item.descripcionCorta}}
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <button>Agendar</button>
+                    <button class="btn-info" (click)="openModal(item)">Mas información</button>
+                </div>
             </div>
-            <div class="card-body">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, dolorum!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, labore!
-                </p>
-            </div>
-            <div class="card-footer">
-                <button>Agendar</button>
-                <button class="btn-info">Mas información</button>
-            </div>
-        </div>
-        <div class="services-card">
+        }
+       <!--  <div class="services-card">
             <div class="card-header">
                 <h2>Consultas psicología</h2>
             </div>
@@ -47,6 +48,6 @@
                 <button>Agendar</button>
                 <button class="btn-info">Mas información</button>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
