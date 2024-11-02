@@ -9,15 +9,18 @@ nav{
         width: 45%;
         margin: 0 1rem;
         display: flex;
-        flex: row;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
     }
     .logo{
+
+        justify-content: flex-start;
         span{
-            width: 100%;
+            width: fit-content;
             font-size: 2rem;
             font-weight: bold;
+            cursor: pointer;
         }
     }
     .nav-options-container{
@@ -30,6 +33,7 @@ nav{
             width: fit-content;
             border-bottom: 2px solid #F28C8C;
             text-align: center;
+            cursor: pointer;
         }
     }
 }

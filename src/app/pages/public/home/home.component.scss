@@ -2,22 +2,38 @@
 Photo by <a href="https://unsplash.com/@dinoreichmuth?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Dino Reichmuth</a> on <a href="https://unsplash.com/photos/green-leafed-tree-near-body-of-water-quFGlyxQufE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
   
 */
-.img-background-load{
-    position: relative;
-    min-height: 100vh;
-    gap: 15rem;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20rem;
-    img{
-        z-index: -10;
-        object-fit: cover;
-        object-position: top;
-        top: 15rem !important;
-    }
+.img-background-load {
+  position: relative;
+  min-height: 100vh;
+  gap: 15rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16rem;
+  img {
+    z-index: -10;
+    object-fit: cover;
+    object-position: top;
+    top: 15rem !important;
+  }
 }
-.modal{
-    position: fixed;
-    z-index: 1000;
-    top: 0;
+.about {
+  margin-top: 10rem;
+}
+.modal {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+}
+
+.btnToHome {
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  right: 20px;
+  border-radius: 100%;
+  border: none;
+  background-color: #4fe2b1;
+  color: #030303;
+  bottom: 30px;
+  cursor: pointer;
 }

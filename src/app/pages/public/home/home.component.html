@@ -1,16 +1,20 @@
 <app-navbar></app-navbar>
 
 <div class="img-background-load">
-    <app-featured></app-featured>
-    <app-about-us></app-about-us>
+    <app-featured id="featured"></app-featured>
+    <app-about-us id="aboutUsComponet" class="about"></app-about-us>
     <img ngSrc="../../../../assets/images/background-river.jpg" alt="Photo by Dino Reichmuth on Unsplash" fill >
 </div>
 
 
 <app-professionals></app-professionals>
 
-<app-products></app-products>
-<app-footer></app-footer>
+<app-products id="services"></app-products>
+<app-footer id="contactFooter"></app-footer>
+
+
+    <button class="btnToHome" id="back">Inicio</button>
+
 
 @if (openDetails) {
     <div class="modal">
