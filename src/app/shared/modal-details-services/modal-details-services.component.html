@@ -2,33 +2,60 @@
     <div class="modal">
         <div class="modal-header">
             <div class="row">
-                <h2>{{productInfo.nombre}}</h2> 
-                 <button (click)="closeModal()">X</button>
+                <h2>{{productInfo.nombre}}</h2>
+                <button (click)="closeModal()">X</button>
             </div>
             <div class="row">
                 <div class="details-labels">
 
+                    @if(productInfo.tipoServicio =='consulta'){
 
                     <div class="row-details">
-                        <mat-icon aria-hidden="false" class="material-icons icon" aria-label="Icon of person" fontIcon="person"></mat-icon>
+                        <mat-icon aria-hidden="false" class="material-icons icon" aria-label="Icon of person"
+                            fontIcon="person"></mat-icon>
                         <div class="text-detail">{{productInfo.nombreProfesional}}</div>
                     </div>
+                    }
                     <div class="row-details">
-                        <mat-icon aria-hidden="false" class="material-icons icon" aria-label="Icon of timer" fontIcon="timer"></mat-icon>
-                        <div class="text-detail">{{productInfo.duracion}}</div> 
+                        <mat-icon aria-hidden="false" class="material-icons icon" aria-label="Icon of timer"
+                            fontIcon="timer"></mat-icon>
+                        <div class="text-detail">{{productInfo.duracion}}</div>
                     </div>
+                    @if(productInfo.tipoServicio =='consulta'){
+
                     <div class="row-details">
-                        <mat-icon aria-hidden="false" class="material-icons icon" aria-label="Icon of apartment" fontIcon="apartment"></mat-icon> 
+                        <mat-icon aria-hidden="false" class="material-icons icon" aria-label="Icon of apartment"
+                            fontIcon="apartment"></mat-icon>
                         <div class="text-detail">{{productInfo.tipoConsulta}}</div>
                     </div>
+                    }
 
                 </div>
             </div>
         </div>
         <div class="modal-body">
-           <p>{{productInfo.descripcionDetallada}}</p> 
-            
-            </div>
-            <a class="btn-agendar" href="">Agendar</a>
+            <p>{{productInfo.descripcionDetallada}}</p>
+
+            @if(productInfo.tipoServicio =='taller'){
+                <div class="details-taller">
+
+                    <p>Aprenderás:</p>
+                    <ul>
+                        @for (item of productInfo.metodologia; track $index) {
+                            <li>{{item}}</li>
+                        }
+                    </ul>
+                    
+                    <p>Los beneficios que obtendrás serán:</p>
+                    <ul>
+                        @for (item of productInfo.beneficios; track $index) {
+                            <li>{{item}}</li>
+                        }
+                    </ul>
+                </div>
+            }
+
+        </div>
+        <a class="btn-agendar" href="">Agendar</a>
     </div>
 </div>

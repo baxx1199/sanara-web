@@ -39,7 +39,7 @@
         flex-direction: row;
         gap: 0.5rem;
         margin-top: auto;
-        button {
+        .btn-service {
           border: none;
           width: 50%;
           padding: 1rem 0;
@@ -47,6 +47,8 @@
           border-radius: 5px;
           background-color: #a28cde;
           font-family: "poppin-bold";
+          text-decoration: none;
+          text-align: center;
           cursor: pointer;
         }
         .btn-info {

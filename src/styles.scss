@@ -1,20 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
-html, body { height: 100%; }
-body { margin: 0;
-    /* background-color: $second-color-white; */
-    background-color: #f9fbfe;
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  /* background-color: $second-color-white; */
+  background-color: #f9fbfe;
 }
 * {
-  font-family:'poppin';
+  font-family: "poppin";
   color: #1d1d1d;
 }
 @font-face {
-    font-family: 'poppin';
-    src: url('assets/fonts/Poppins-Regular.ttf');
+  font-family: "poppin";
+  src: url("assets/fonts/Poppins-Regular.ttf");
 }
 @font-face {
-    font-family: 'poppin-bold';
-    src: url('assets/fonts/Poppins-Bold.ttf');
+  font-family: "poppin-bold";
+  src: url("assets/fonts/Poppins-Bold.ttf");
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  
+  font-family: "poppin";
+}
+.mat-body-large, .mat-typography .mat-body-large, .mat-typography{
+    font: initial !important;
+    letter-spacing: initial;
+}
+

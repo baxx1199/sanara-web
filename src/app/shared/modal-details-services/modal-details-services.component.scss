@@ -58,9 +58,26 @@
             flex-direction: column;
             align-items: center;
             margin-top: 3rem;
+            overflow: auto;
+            margin-bottom: 2rem;
             p{
                 text-align: justify;
-                font-size: 1.5rem;
+                font-size: 1.2rem;
+            }
+            .details-taller{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                width: 100%;
+                flex-direction: column;
+                p{
+                    margin-bottom:10px ;
+                }
+                ul{
+                    li{
+                        font-size: 1.2rem;
+                    }
+                }
             }
         }
         .btn-agendar{

@@ -13,8 +13,8 @@
                     </p>
                 </div>
                 <div class="card-footer">
-                    <button>Agendar</button>
-                    <button class="btn-info" (click)="openModal(item)">Mas información</button>
+                    <a class="btn-service" [href]="item.contacto" target="_blank">Agendar</a>
+                    <button class="btn-service btn-info" (click)="openModal(item)">Mas información</button>
                 </div>
             </div>
         }

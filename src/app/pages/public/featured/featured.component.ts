@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { DetailService } from '../../../shared/services/detail.service';
+import { Features, Products } from '../products/data/products.data';
 
 @Component({
   selector: 'app-featured',
@@ -9,8 +10,13 @@ import { DetailService } from '../../../shared/services/detail.service';
   styleUrl: './featured.component.scss'
 })
 export class FeaturedComponent {
-  constructor(private modalService:DetailService) { }
+
+  featureData:any = '';
+  constructor(private modalService:DetailService) {
+    this.featureData = Features.feature;
+   }
   openModal(){
+    this.modalService.setInfoData(this.featureData);
     this.modalService.setDataModal(true)
   }
 }

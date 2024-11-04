@@ -1,24 +1,20 @@
-<app-navbar></app-navbar>
+<app-navbar id="navbarComp"></app-navbar>
 
 <div class="img-background-load">
     <app-featured id="featured"></app-featured>
     <app-about-us id="aboutUsComponet" class="about"></app-about-us>
-    <img ngSrc="../../../../assets/images/background-river.jpg" alt="Photo by Dino Reichmuth on Unsplash" fill >
+    <img ngSrc="../../../../assets/images/background-river.jpg" alt="Photo by Dino Reichmuth on Unsplash" fill>
 </div>
-
 
 <app-professionals></app-professionals>
 
 <app-products id="services"></app-products>
 <app-footer id="contactFooter"></app-footer>
 
-
-    <button class="btnToHome" id="back">Inicio</button>
-
+<button class="btnToHome" [ngClass]="{ 'active': !isHidden, 'disabled': isHidden }" id="back"><mat-icon>expand_less</mat-icon></button>
 
 @if (openDetails) {
-    <div class="modal">
-
-        <app-modal-details-services></app-modal-details-services>
-    </div>
+<div class="modal">
+    <app-modal-details-services></app-modal-details-services>
+</div>
 }

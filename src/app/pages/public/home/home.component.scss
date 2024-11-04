@@ -34,6 +34,19 @@ Photo by <a href="https://unsplash.com/@dinoreichmuth?utm_content=creditCopyText
   border: none;
   background-color: #4fe2b1;
   color: #030303;
-  bottom: 30px;
+  bottom: -130px;
   cursor: pointer;
+  visibility: hidden;
+  transition: all 0.5s ease;
+}
+
+.disabled{
+  visibility: visible;
+  bottom: 30px;
+  pointer-events: auto;
+}
+
+.active{
+  bottom: -140px;
+  pointer-events: none;
 }
